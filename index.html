@@ -1,0 +1,73 @@
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+      function filterPath(string) {
+      return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+      }
+      $('a[href*=#]').each(function() {
+      if ( filterPath(location.pathname) == filterPath(this.pathname)
+      && location.hostname == this.hostname
+      && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+      if ($target) {
+      var targetOffset = $target.offset().top;
+      $(this).click(function() {
+      $('html, body').animate({scrollTop: targetOffset}, 300);
+      return false;
+      });
+      }
+      }
+      });
+      });
+    </script>
+  </head>
+  <body>
+  <a name="home"></a>
+    <div id="main-container" class="container-fluid">
+      	<div class="navbar navbar-default navbar-fixed-top">
+		  	<div class="container">
+		    <div class="navbar-header">
+          <img src="assets/logo.png">
+		      <a class="navbar-brand" href="#">Pencil Labs</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="#home">Home</a></li>
+		      <li class="active"><a href="#game">Pencil Labs</a></li>
+		      <li class="active"><a href="#contact">Contact</a></li>
+          <li class="active"><a href="#team">Team</a></li>
+		    </ul>
+	  	</div>
+      </div>
+      <div class="row">
+        <div id="sidebar" class="col-xs-3">
+
+        <div id="content" class="col-xs-9">
+        	<div class="description">
+        		Drawing the Future
+        	</div>
+        	<a name="game"></a>
+        	<div class="pencillabs">
+            <img src="assets/load.png">
+        	</div>
+        	<a name="team"></a>
+        	<div class="team">
+        	</div>
+        	<a name="contact"></a>
+        	<div class="contact">
+        	</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

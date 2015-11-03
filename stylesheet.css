@@ -1,0 +1,81 @@
+.description {
+	height: 600px;
+	text-align: center;
+	padding-top: 50px;
+	font-family: Impact, "Arial Black", sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+.pencillabs {
+	margin-top: 50px;
+	height: 800px;
+	text-align: center;
+	font-family: Impact, "Arial Black", sans-serif;
+	font-size: 26px;
+	color: white;
+}
+
+.contact {
+	height: 600px;
+}
+
+.social-network {
+	padding-left:10px;
+	width: 300px;
+	height: 500px;
+	position: fixed;
+}
+
+.navbar{
+	font-family: Impact, "Arial Black", sans-serif;
+    color: #696969;
+    font-size: 16px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: .5rem;
+    margin: 0 0 0px 0;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+	background-color: white !important;
+}
+
+.row {
+	padding-top: 80px;
+	background-image: url("assets/back.png");
+}
+
+.container-fluid {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.navbar-header img {
+	width: 32px;
+	height: 32px;
+	border-radius: 3px;
+}
+
+.navbar-header {
+	margin-top: 4px;
+	padding-left: 10px;
+}
+
+.container {
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.navbar-nav {
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 330px;
+}
+
+.navbar li {
+	padding-left: 15px;
+}
