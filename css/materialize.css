@@ -3490,8 +3490,8 @@ ul.staggered-list li {
 
 /* line 302, ../_sass/components/_global.scss */
 footer.page-footer {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
   background-color: #03a9f4;
 }
 /* line 307, ../_sass/components/_global.scss */
@@ -12642,4 +12642,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 .navbar-logo {
   width: 3rem;
   padding-top: 0.4rem;
+}
+
+/* line 7, ../_sass/_pencil.scss */
+.first {
+  height: 60rem;
+}
+
+/* line 11, ../_sass/_pencil.scss */
+.staggered-list {
+  opacity: 0;
 }

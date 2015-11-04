@@ -2,5 +2,12 @@
     @extend .responsive-img;
     width: 3rem;
     padding-top: 0.4rem;
-    // padding-left: 0.2rem;
+}
+
+.first {
+    height: 60rem;
+}
+
+.staggered-list {
+    opacity: 0;
 }
