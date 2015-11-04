@@ -12641,7 +12641,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* line 1, ../_sass/_pencil.scss */
 #pencil-navbar {
   position: fixed;
-  opacity: 0;
+  display: initial;
   top: 0;
 }
 

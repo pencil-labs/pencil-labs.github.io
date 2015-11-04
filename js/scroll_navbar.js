@@ -1,14 +1,11 @@
 $(function(){
-  var bar = $('#pencil-navbar');
-  var limit = $('#content-section').offset().top / 2
   $(window).scroll(function() {
-    var topDistance = $(this).scrollTop();
-
-    if(topDistance > limit) {
-      bar.stop().animate({'opacity' : 1})
-    } else {
-      bar.stop().animate({'opacity' : 0});
-    }
-
+    var bar = $('#pencil-navbar');
+    bar.fadeOut( "slow" );
+    clearTimeout($.data(this, 'scrollTimer'));
+    $.data(this, 'scrollTimer', setTimeout(function() {
+      bar.fadeIn(500).css( "display", "initial" );
+    }, 1200));
   });
 });
+
