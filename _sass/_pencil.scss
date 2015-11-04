@@ -1,3 +1,9 @@
+#pencil-navbar {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+}
+
 .navbar-logo {
     @extend .responsive-img;
     width: 3rem;

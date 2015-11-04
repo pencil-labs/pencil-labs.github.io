@@ -12639,17 +12639,24 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   }
 }
 /* line 1, ../_sass/_pencil.scss */
+#pencil-navbar {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+}
+
+/* line 7, ../_sass/_pencil.scss */
 .navbar-logo {
   width: 3rem;
   padding-top: 0.4rem;
 }
 
-/* line 7, ../_sass/_pencil.scss */
+/* line 13, ../_sass/_pencil.scss */
 .first {
   height: 50rem;
 }
 
-/* line 11, ../_sass/_pencil.scss */
+/* line 17, ../_sass/_pencil.scss */
 .staggered-list {
   opacity: 0;
 }
