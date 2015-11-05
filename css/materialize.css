@@ -12652,11 +12652,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 /* line 13, ../_sass/_pencil.scss */
+#intro {
+  background: url("/assets/pencil-mobile.jpg") no-repeat center center fixed;
+  width: 100%;
+  background-size: cover;
+  padding: 250px 0 300px 0;
+}
+
+/* line 20, ../_sass/_pencil.scss */
 .first {
   height: 50rem;
 }
 
-/* line 17, ../_sass/_pencil.scss */
+/* line 24, ../_sass/_pencil.scss */
 .staggered-list {
   opacity: 0;
 }
