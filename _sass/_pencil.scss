@@ -1,6 +1,7 @@
 #pencil-navbar {
     position: fixed;
     display: initial;
+    opacity: 0;
     top: 0;
 }
 
@@ -12,9 +13,23 @@
 
 #intro {
     background: url('/assets/pencil-mobile.jpg') no-repeat center center fixed;
-    width: 100%;
+    width: 100vh;
+    position: relative;
     background-size: cover;
-    padding: 250px 0 300px 0;
+    padding: 10rem 0 15rem 0;
+}
+
+.home-logo {
+    @extend .responsive-img;
+    width: 100%;
+}
+
+.show-more {
+    margin-top: 5rem;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -43.5px;
 }
 
 .first {

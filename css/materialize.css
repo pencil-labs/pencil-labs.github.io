@@ -3296,7 +3296,7 @@ i.large {
 }
 
 /* line 130, ../_sass/components/_global.scss */
-img.responsive-img, img.navbar-logo,
+img.responsive-img, img.navbar-logo, img.home-logo,
 video.responsive-video {
   max-width: 100%;
   height: auto;
@@ -12642,29 +12642,45 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 #pencil-navbar {
   position: fixed;
   display: initial;
+  opacity: 0;
   top: 0;
 }
 
-/* line 7, ../_sass/_pencil.scss */
+/* line 8, ../_sass/_pencil.scss */
 .navbar-logo {
   width: 3rem;
   padding-top: 0.4rem;
 }
 
-/* line 13, ../_sass/_pencil.scss */
+/* line 14, ../_sass/_pencil.scss */
 #intro {
   background: url("/assets/pencil-mobile.jpg") no-repeat center center fixed;
-  width: 100%;
+  width: 100vh;
+  position: relative;
   background-size: cover;
-  padding: 250px 0 300px 0;
+  padding: 10rem 0 15rem 0;
 }
 
-/* line 20, ../_sass/_pencil.scss */
+/* line 22, ../_sass/_pencil.scss */
+.home-logo {
+  width: 100%;
+}
+
+/* line 27, ../_sass/_pencil.scss */
+.show-more {
+  margin-top: 5rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -43.5px;
+}
+
+/* line 35, ../_sass/_pencil.scss */
 .first {
   height: 50rem;
 }
 
-/* line 24, ../_sass/_pencil.scss */
+/* line 39, ../_sass/_pencil.scss */
 .staggered-list {
   opacity: 0;
 }
