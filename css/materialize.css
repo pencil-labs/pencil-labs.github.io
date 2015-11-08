@@ -3296,7 +3296,7 @@ i.large {
 }
 
 /* line 130, ../_sass/components/_global.scss */
-img.responsive-img, img.navbar-logo, img.home-logo,
+img.responsive-img, img.navbar-logo, img.home-logo, img.development-imgs,
 video.responsive-video {
   max-width: 100%;
   height: auto;
@@ -3356,7 +3356,7 @@ video.responsive-video {
   }
 }
 /* line 190, ../_sass/components/_global.scss */
-.parallax-container {
+.parallax-container, .parallax-middle {
   position: relative;
   overflow: hidden;
   height: 500px;
@@ -8701,6 +8701,46 @@ nav .input-field label.active {
   src: url("../font/roboto/Roboto-Bold.woff2") format("woff2"), url("../font/roboto/Roboto-Bold.woff") format("woff"), url("../font/roboto/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+@font-face {
+  font-family: "AdventPro";
+  src: url("../font/advent-pro/AdventPro-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../font/advent-pro/AdventPro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../font/advent-pro/AdventPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../font/advent-pro/AdventPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../font/advent-pro/AdventPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("../font/sansation/Sansation-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("../font/sansation/Sansation-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("../font/sansation/Sansation-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
 /* line 2, ../_sass/components/_typography.scss */
 a {
   text-decoration: none;
@@ -12683,4 +12723,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* line 39, ../_sass/_pencil.scss */
 .staggered-list {
   opacity: 0;
+}
+
+/* line 43, ../_sass/_pencil.scss */
+.development-imgs {
+  opacity: 0;
+}
+
+/* line 49, ../_sass/_pencil.scss */
+.parallax-middle {
+  height: 25rem;
+}
+
+/* line 54, ../_sass/_pencil.scss */
+.dev-content {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* line 59, ../_sass/_pencil.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "AdventPro";
+  font-weight: bold;
 }

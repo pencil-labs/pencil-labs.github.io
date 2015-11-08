@@ -39,3 +39,24 @@
 .staggered-list {
     opacity: 0;
 }
+
+.development-imgs {
+    @extend .responsive-img;
+    opacity: 0;
+
+}
+
+.parallax-middle {
+    @extend .parallax-container;
+    height: 25rem;
+}
+
+.dev-content {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "AdventPro";
+    font-weight: bold;
+}
