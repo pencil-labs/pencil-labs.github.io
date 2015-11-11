@@ -12694,7 +12694,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /* line 14, ../_sass/_pencil.scss */
 #intro {
-  background: url("/assets/pencil-mobile.jpg") no-repeat center center fixed;
+  background: url("/assets/pencil-mobile.png") no-repeat center center fixed;
   height: 100vh;
   position: relative;
   background-size: cover;
