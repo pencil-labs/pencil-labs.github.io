@@ -12728,6 +12728,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 /* line 43, ../_sass/_pencil.scss */
 .development-imgs {
   opacity: 0;
+  width: 14rem;
 }
 
 /* line 49, ../_sass/_pencil.scss */

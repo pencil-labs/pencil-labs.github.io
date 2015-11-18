@@ -24,7 +24,7 @@ layout: default
         <li class="staggered-list">
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center brown-text"><i class="large material-icons">av_timer</i></h2>
+              <h2 class="center blue-grey-text darken-1"><i class="large material-icons">av_timer</i></h2>
               <h5 class="center">Loading...</h5>
               <p class="light">We're starting to draw the future, stay tuned for further
               content and help us to change the world.</p>
@@ -37,7 +37,7 @@ layout: default
         <li class="staggered-list">
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center brown-text"><i class="large material-icons">group</i></h2>
+              <h2 class="center blue-grey-text darken-1"><i class="large material-icons">group</i></h2>
               <h5 class="center">Service Focused</h5>
               <p class="light">Our goal is to provide products that connect people
               to their needs, with scalable, easy to use website and apps.</p>
@@ -50,7 +50,7 @@ layout: default
         <li class="staggered-list">
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center brown-text"><i class="large material-icons">email</i></h2>
+              <h2 class="center blue-grey-text darken-1"><i class="large material-icons">email</i></h2>
               <h5 class="center">Contact Us</h5>
               <p class="light">If you want to know more about us, give a feedback
               or give some good idea, contact us in the email contact@pencillabs.com</p>
@@ -71,30 +71,64 @@ layout: default
 <div class="z-depth-1 main-content">
   <div class="container">
     <div class="section">
+      <div class="row center">
+        <h2>What we do?</h2>
+      </div>
+
+      <div class="row hide-on-small-only">
+        <div class="col s12 m5 center">
+          <img id="innovation-img" src="{{ "/assets/innovation.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+        </div>
+
+        <ul id="innovation-txt">
+          <li class="staggered-list">
+            <div class="col s12 m7">
+              <h3 class="blue-grey-text darken-1">Innovation</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row hide-on-med-and-up">
+        <div class="col s12 m5 center">
+          <img id="s-innovation-img" src="{{ "/assets/innovation.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+        </div>
+
+        <ul id="s-innovation-txt">
+          <li class="staggered-list">
+            <div class="col s12 m7 center-align">
+              <h3 class="blue-grey-text darken-1">Innovation</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <div class="row hide-on-small-only">
         <ul id="web-development-txt">
           <li class="staggered-list">
             <div class="col s12 m7 right-align ">
-              <h3>Web development</h3>
+              <h3 class="blue-grey-text darken-1">Web development</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
             </div>
           </li>
         </ul>
 
         <div class="col s12 m5 center ">
-          <img id="web-development-img" src="{{ "/assets/pc-draw.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="web-development-img" src="{{ "/assets/web-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
         </div>
       </div>
 
       <div class="row hide-on-med-and-up">
         <div class="col s12 center">
-          <img id="s-web-development-img" src="{{ "/assets/pc-draw.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="s-web-development-img" src="{{ "/assets/web-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
         </div>
         <div class="col s12 center-align">
           <ul id="s-web-development-txt">
             <li class="staggered-list">
               <div class="col s12 m7 center-align">
-                <h3>Web development</h3>
+                <h3 class="blue-grey-text darken-1">Web development</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
               </div>
             </li>
@@ -104,13 +138,13 @@ layout: default
 
       <div class="row hide-on-small-only">
         <div class="col s12 m5 center">
-          <img id="mobile-development-img" src="{{ "/assets/mobile-draw.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="mobile-development-img" src="{{ "/assets/mobile-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
         </div>
 
         <ul id="mobile-development-txt">
           <li class="staggered-list">
             <div class="col s12 m7">
-              <h3>Mobile development</h3>
+              <h3 class="blue-grey-text darken-1">Mobile development</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
             </div>
           </li>
@@ -119,13 +153,74 @@ layout: default
 
       <div class="row hide-on-med-and-up">
         <div class="col s12 m5 center">
-          <img id="s-mobile-development-img" src="{{ "/assets/mobile-draw.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="s-mobile-development-img" src="{{ "/assets/mobile-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
         </div>
 
         <ul id="s-mobile-development-txt">
           <li class="staggered-list">
             <div class="col s12 m7 center-align">
-              <h3>Mobile development</h3>
+              <h3 class="blue-grey-text darken-1">Mobile development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row hide-on-small-only">
+        <ul id="machine-learn-txt">
+          <li class="staggered-list">
+            <div class="col s12 m7 right-align ">
+              <h3 class="blue-grey-text darken-1">Machine Learn</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="col s12 m5 center ">
+          <img id="machine-learn-img" src="{{ "/assets/machine-learn.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+        </div>
+      </div>
+
+      <div class="row hide-on-med-and-up">
+        <div class="col s12 center">
+          <img id="s-machine-learn-img" src="{{ "/assets/machine-learn.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+        </div>
+        <div class="col s12 center-align">
+          <ul id="s-machine-learn-txt">
+            <li class="staggered-list">
+              <div class="col s12 m7 center-align">
+                <h3 class="blue-grey-text darken-1">Machine Learn</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row hide-on-small-only">
+        <div class="col s12 m5 center">
+          <img id="consultancies-img" src="{{ "/assets/consultancies.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+        </div>
+
+        <ul id="consultancies-txt">
+          <li class="staggered-list">
+            <div class="col s12 m7">
+              <h3 class="blue-grey-text darken-1">Consultancies</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row hide-on-med-and-up">
+        <div class="col s12 m5 center">
+          <img id="s-consultancies-img" src="{{ "/assets/consultancies.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+        </div>
+
+        <ul id="s-consultancies-txt">
+          <li class="staggered-list">
+            <div class="col s12 m7 center-align">
+              <h3 class="blue-grey-text darken-1">Consultancies</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vero nobis nihil ullam culpa. Distinctio consequuntur similique animi molestias, consectetur vel. Ab, accusamus deserunt perspiciatis? Laborum exercitationem necessitatibus ratione. A.</p>
             </div>
           </li>
@@ -151,10 +246,7 @@ layout: default
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m6 center">
-          <img src="{{ "/assets/logo-bg.png" | prepend: site.baseurl }}" alt="" class="responsive-img">
-        </div>
-        <div class="col s12 m6">
+        <div class="col s12 m8 offset-m2">
           <div class="row">
             <div class="input-field col s12">
               <i class="material-icons prefix">mail</i>
