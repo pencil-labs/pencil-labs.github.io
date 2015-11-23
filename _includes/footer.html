@@ -14,36 +14,17 @@
     $(".button-collapse").sideNav();
     $(".parallax").parallax();
 
-    var options = [
-    {selector: '#loading', offset: 100, callback: 'Materialize.showStaggeredList("#loading")' },
-    {selector: '#service-focused', offset: 250, callback: 'Materialize.showStaggeredList("#service-focused")' },
-    {selector: '#contact-us', offset: 400, callback: 'Materialize.showStaggeredList("#contact-us")' },
-    {selector: '#parallax-end', offset: 400, callback: 'Materialize.fadeInImage("#parallax-end")'},
-    {selector: '#innovation-txt', offset: 200, callback: 'Materialize.showStaggeredList("#innovation-txt")' },
-    {selector: '#innovation-img', offset: 200, callback: 'Materialize.fadeInImage("#innovation-img")'},
-    {selector: '#s-innovation-txt', offset: 200, callback: 'Materialize.showStaggeredList("#s-innovation-txt")' },
-    {selector: '#s-innovation-img', offset: 200, callback: 'Materialize.fadeInImage("#s-innovation-img")'},
-    {selector: '#web-development-txt', offset: 200, callback: 'Materialize.showStaggeredList("#web-development-txt")' },
-    {selector: '#web-development-img', offset: 200, callback: 'Materialize.fadeInImage("#web-development-img")'},
-    {selector: '#s-web-development-txt', offset: 200, callback: 'Materialize.showStaggeredList("#s-web-development-txt")' },
-    {selector: '#s-web-development-img', offset: 200, callback: 'Materialize.fadeInImage("#s-web-development-img")'},
-    {selector: '#mobile-development-txt', offset: 200, callback: 'Materialize.showStaggeredList("#mobile-development-txt")' },
-    {selector: '#mobile-development-img', offset: 200, callback: 'Materialize.fadeInImage("#mobile-development-img")'},
-    {selector: '#s-mobile-development-txt', offset: 200, callback: 'Materialize.showStaggeredList("#s-mobile-development-txt")' },
-    {selector: '#s-mobile-development-img', offset: 200, callback: 'Materialize.fadeInImage("#s-mobile-development-img")'},
-    {selector: '#machine-learn-txt', offset: 200, callback: 'Materialize.showStaggeredList("#machine-learn-txt")' },
-    {selector: '#machine-learn-img', offset: 200, callback: 'Materialize.fadeInImage("#machine-learn-img")'},
-    {selector: '#s-machine-learn-txt', offset: 200, callback: 'Materialize.showStaggeredList("#s-machine-learn-txt")' },
-    {selector: '#s-machine-learn-img', offset: 200, callback: 'Materialize.fadeInImage("#s-machine-learn-img")'},
-    {selector: '#consultancies-txt', offset: 200, callback: 'Materialize.showStaggeredList("#consultancies-txt")' },
-    {selector: '#consultancies-img', offset: 200, callback: 'Materialize.fadeInImage("#consultancies-img")'},
-    {selector: '#s-consultancies-txt', offset: 200, callback: 'Materialize.showStaggeredList("#s-consultancies-txt")' },
-    {selector: '#s-consultancies-img', offset: 200, callback: 'Materialize.fadeInImage("#s-consultancies-img")'},
-    {selector: '#security-txt', offset: 200, callback: 'Materialize.showStaggeredList("#security-txt")' },
-    {selector: '#security-img', offset: 200, callback: 'Materialize.fadeInImage("#security-img")'},
-    {selector: '#s-security-txt', offset: 200, callback: 'Materialize.showStaggeredList("#s-security-txt")' },
-    {selector: '#s-security-img', offset: 200, callback: 'Materialize.fadeInImage("#s-security-img")'},
+    var methods = ["showStaggeredList","showStaggeredList","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage"
     ];
+    var offsets = [100,250,400,400,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200
+    ];
+    var divs = ["#loading","#service-focused","#contact-us","#parallax-end","#innovation-txt","#innovation-img","#s-innovation-txt","#s-innovation-img","#web-development-txt","#web-development-img","#s-web-development-txt","#s-web-development-img","#mobile-development-txt","#mobile-development-img","#s-mobile-development-txt","#s-mobile-development-img","#machine-learn-txt","#machine-learn-img","#s-machine-learn-txt","#s-machine-learn-img","#consultancies-txt","#consultancies-img","#s-consultancies-txt","#s-consultancies-img","#security-txt","#security-img","#s-security-txt","#s-security-img"
+    ];
+    var options = [];
+    for (var i = 0; i < divs.length; i++) {
+      options[i] = {selector: divs[i], offset: offsets[i], callback: 'Materialize.' + methods[i] + '("' + divs[i] + '")'};
+    };
+    console.log(options);
     Materialize.scrollFire(options);
   })
   </script>
