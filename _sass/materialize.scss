@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import "_animate/properties.scss";
+@import "_animate/animate.scss";
+
 // Mixins
 @import "components/prefixer";
 @import "components/mixins";

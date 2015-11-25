@@ -21,10 +21,12 @@
 
 .home-logo {
     @extend .responsive-img;
+    @include fadeInDown($duration: 2s);
     width: 100%;
 }
 
 .show-more {
+    @include bounce($duration: 2s, $count: 5);
     margin-top: 5rem;
     position: absolute;
     bottom: 20px;
@@ -59,4 +61,15 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: "AdventPro";
     font-weight: bold;
+}
+
+.active-navbar {
+    @extend .active;
+    font-weight: bold;
+    border-bottom: 2px solid color("pencil", "orange");
+
+    :hover {
+        color: darken(white, 10);
+
+    }
 }
