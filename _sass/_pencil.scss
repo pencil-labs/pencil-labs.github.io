@@ -73,3 +73,20 @@ h1, h2, h3, h4, h5, h6 {
 
     }
 }
+
+.facebook-content,
+.phone-content,
+.contact-content{
+    position: absolute;
+    left: 47px;
+    bottom: 0px;
+}
+
+.footer-social{
+    padding-top: 30px !important;
+    padding-left: 40px !important;
+}
+
+.icon-position{
+    position: relative !important;
+}
