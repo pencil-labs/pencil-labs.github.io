@@ -22118,14 +22118,15 @@ h1, h2, h3, h4, h5, h6 {
 .photo_member_size {
   width: 150px;
   height: 150px;
+  border-radius: 15px;
 }
 
-/* line 137, ../_sass/_pencil.scss */
+/* line 138, ../_sass/_pencil.scss */
 .members_item {
   padding-bottom: 5px;
 }
 
-/* line 141, ../_sass/_pencil.scss */
+/* line 142, ../_sass/_pencil.scss */
 .members_colum {
   margin-top: 4px;
 }
