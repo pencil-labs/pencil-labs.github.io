@@ -21908,12 +21908,17 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 /* line 8, ../_sass/_pencil.scss */
+.card-title {
+  color: #26C6DA !important;
+}
+
+/* line 12, ../_sass/_pencil.scss */
 .navbar-logo {
   width: 3rem;
   padding-top: 0.4rem;
 }
 
-/* line 14, ../_sass/_pencil.scss */
+/* line 18, ../_sass/_pencil.scss */
 .intro {
   background: url("/assets/pencil-mobile-low.jpg") no-repeat center center fixed;
   height: 100vh;
@@ -21922,7 +21927,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 10rem 0 15rem 0;
 }
 
-/* line 22, ../_sass/_pencil.scss */
+/* line 26, ../_sass/_pencil.scss */
 .home-logo {
   -webkit-animation-name: fadeInDown;
   -moz-animation-name: fadeInDown;
@@ -21962,7 +21967,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   width: 100%;
 }
 
-/* line 28, ../_sass/_pencil.scss */
+/* line 32, ../_sass/_pencil.scss */
 .show-more {
   -webkit-animation-name: bounce;
   -moz-animation-name: bounce;
@@ -22006,50 +22011,50 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   margin-left: -43.5px;
 }
 
-/* line 37, ../_sass/_pencil.scss */
+/* line 41, ../_sass/_pencil.scss */
 .first {
   height: 50rem;
 }
 
-/* line 41, ../_sass/_pencil.scss */
+/* line 45, ../_sass/_pencil.scss */
 .staggered-list {
   opacity: 0;
 }
 
-/* line 45, ../_sass/_pencil.scss */
+/* line 49, ../_sass/_pencil.scss */
 .development-imgs {
   opacity: 0;
   width: 14rem;
 }
 
-/* line 51, ../_sass/_pencil.scss */
+/* line 55, ../_sass/_pencil.scss */
 .parallax-middle {
   height: 25rem;
 }
 
-/* line 56, ../_sass/_pencil.scss */
+/* line 60, ../_sass/_pencil.scss */
 .main-content {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
-/* line 61, ../_sass/_pencil.scss */
+/* line 65, ../_sass/_pencil.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "AdventPro";
   font-weight: bold;
 }
 
-/* line 66, ../_sass/_pencil.scss */
+/* line 70, ../_sass/_pencil.scss */
 .active-navbar {
   font-weight: bold;
   border-bottom: 2px solid #ff7f00;
 }
-/* line 71, ../_sass/_pencil.scss */
+/* line 75, ../_sass/_pencil.scss */
 .active-navbar :hover {
   color: #e6e6e6;
 }
 
-/* line 77, ../_sass/_pencil.scss */
+/* line 81, ../_sass/_pencil.scss */
 .facebook-content,
 .phone-content,
 .contact-content {
@@ -22058,30 +22063,30 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0px;
 }
 
-/* line 85, ../_sass/_pencil.scss */
+/* line 89, ../_sass/_pencil.scss */
 .footer-social {
   padding-top: 30px !important;
   padding-left: 40px !important;
 }
 
-/* line 90, ../_sass/_pencil.scss */
+/* line 94, ../_sass/_pencil.scss */
 .icon-position {
   position: relative !important;
 }
 
-/* line 95, ../_sass/_pencil.scss */
+/* line 99, ../_sass/_pencil.scss */
 .cards-container {
   column-break-inside: avoid;
 }
 
-/* line 98, ../_sass/_pencil.scss */
+/* line 102, ../_sass/_pencil.scss */
 .cards-container .card {
   display: inline-block;
   overflow: visible;
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 104, ../_sass/_pencil.scss */
+  /* line 108, ../_sass/_pencil.scss */
   .cards-container {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -22089,7 +22094,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 111, ../_sass/_pencil.scss */
+  /* line 115, ../_sass/_pencil.scss */
   .cards-container {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -22097,14 +22102,30 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 118, ../_sass/_pencil.scss */
+  /* line 122, ../_sass/_pencil.scss */
   .cards-container {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
   }
 }
-/* line 124, ../_sass/_pencil.scss */
+/* line 128, ../_sass/_pencil.scss */
 .text-center {
   text-align: center;
+}
+
+/* line 132, ../_sass/_pencil.scss */
+.photo_member_size {
+  width: 150px;
+  height: 150px;
+}
+
+/* line 137, ../_sass/_pencil.scss */
+.members_item {
+  padding-bottom: 5px;
+}
+
+/* line 141, ../_sass/_pencil.scss */
+.members_colum {
+  margin-top: 4px;
 }
