@@ -21920,7 +21920,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 /* line 18, ../_sass/_pencil.scss */
 .intro {
-  background: url("/assets/pencil-mobile-low.jpg") no-repeat center center fixed;
+  background: url("/assets/pencil-mobile-low.png") no-repeat center center fixed;
   height: 100vh;
   position: relative;
   background-size: cover;
@@ -22061,32 +22061,33 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   left: 47px;
   bottom: 0px;
+  font-size: 20px;
 }
 
-/* line 89, ../_sass/_pencil.scss */
+/* line 90, ../_sass/_pencil.scss */
 .footer-social {
   padding-top: 30px !important;
   padding-left: 40px !important;
 }
 
-/* line 94, ../_sass/_pencil.scss */
+/* line 95, ../_sass/_pencil.scss */
 .icon-position {
   position: relative !important;
 }
 
-/* line 99, ../_sass/_pencil.scss */
+/* line 100, ../_sass/_pencil.scss */
 .cards-container {
   column-break-inside: avoid;
 }
 
-/* line 102, ../_sass/_pencil.scss */
+/* line 103, ../_sass/_pencil.scss */
 .cards-container .card {
   display: inline-block;
   overflow: visible;
 }
 
 @media only screen and (max-width: 600px) {
-  /* line 108, ../_sass/_pencil.scss */
+  /* line 109, ../_sass/_pencil.scss */
   .cards-container {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -22094,7 +22095,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media only screen and (min-width: 601px) {
-  /* line 115, ../_sass/_pencil.scss */
+  /* line 116, ../_sass/_pencil.scss */
   .cards-container {
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -22102,31 +22103,36 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media only screen and (min-width: 993px) {
-  /* line 122, ../_sass/_pencil.scss */
+  /* line 123, ../_sass/_pencil.scss */
   .cards-container {
     -webkit-column-count: 3;
     -moz-column-count: 3;
     column-count: 3;
   }
 }
-/* line 128, ../_sass/_pencil.scss */
+/* line 129, ../_sass/_pencil.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 132, ../_sass/_pencil.scss */
+/* line 133, ../_sass/_pencil.scss */
 .photo_member_size {
   width: 150px;
   height: 150px;
   border-radius: 15px;
 }
 
-/* line 138, ../_sass/_pencil.scss */
+/* line 139, ../_sass/_pencil.scss */
 .members_item {
   padding-bottom: 5px;
 }
 
-/* line 142, ../_sass/_pencil.scss */
+/* line 143, ../_sass/_pencil.scss */
 .members_colum {
   margin-top: 4px;
+}
+
+/* line 148, ../_sass/_pencil.scss */
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0, 0, 0, 0.4);
 }

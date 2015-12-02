@@ -16,7 +16,7 @@
 }
 
 .intro {
-    background: url('/assets/pencil-mobile-low.jpg') no-repeat center center fixed;
+    background: url('/assets/pencil-mobile-low.png') no-repeat center center fixed;
     height: 100vh;
     position: relative;
     background-size: cover;
@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     left: 47px;
     bottom: 0px;
+    font-size: 20px;
 }
 
 .footer-social{
@@ -141,4 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .members_colum{
   margin-top: 4px;
+}
+
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0,0,0,0.4);
 }
