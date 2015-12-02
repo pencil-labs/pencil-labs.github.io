@@ -1,11 +1,54 @@
----
-layout: default
----
-<section class="intro">
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/css/materialize.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+
+  <title>Pencil Labs</title>
+
+</head>
+
+
+  <body>
+
+    <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
+
+<div id="pencil-navbar" class="navbar-fixed z-depth-1 js-navbar">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center"><img class="navbar-logo" src="/assets/logo.png" alt=""></a>
+
+      <!-- activate side-bav in mobile view -->
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+
+      </ul>
+      <!-- navbar for mobile -->
+      <ul class="side-nav" id="mobile-demo">
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+    <section class="intro">
   <div class="container">
     <div class="row">
       <div class="col md12 center">
-        <img class="home-logo" src="{{ "/assets/logo_white_3.png" | prepend: site.baseurl }}" alt="">
+        <img class="home-logo" src="/assets/logo_white_3.png" alt="">
       </div>
     </div>
     <div class="show-more">
@@ -61,7 +104,7 @@ layout: default
 
 <div class="parallax-middle">
   <div class="parallax">
-    <img id="parallax-end" class="home-parallax" src="{{ "/assets/colored-pencils.jpg" | prepend: site.baseurl }}" alt="">
+    <img id="parallax-end" class="home-parallax" src="/assets/colored-pencils.jpg" alt="">
   </div>
 </div>
 
@@ -74,7 +117,7 @@ layout: default
 
       <div class="row hide-on-small-only">
         <div class="col s12 m5 center">
-          <img id="innovation-img" src="{{ "/assets/integration.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="innovation-img" src="/assets/integration.png" alt="" class="development-imgs">
         </div>
 
         <ul id="innovation-txt">
@@ -83,7 +126,7 @@ layout: default
               <h3 class="blue-grey-text darken-1">Integração de Ferramentas</h3>
               <p>
                 A Pencillabs possui uma equipe experiente com integração de ferramentas,
-                trazendo soluções de integração visual, autenticação única e busca integrada,
+                trazendo soluções de integração visual, autenticação única e busca global,
                 proporcionando acesso as informações das ferramentas de maneira centralizada.
               </p>
             </div>
@@ -93,7 +136,7 @@ layout: default
 
       <div class="row hide-on-med-and-up">
         <div class="col s12 m5 center">
-          <img id="s-innovation-img" src="{{ "/assets/innovation.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="s-innovation-img" src="/assets/innovation.png" alt="" class="development-imgs">
         </div>
 
         <ul id="s-innovation-txt">
@@ -121,13 +164,13 @@ layout: default
         </ul>
 
         <div class="col s12 m5 center ">
-          <img id="web-development-img" src="{{ "/assets/innovation.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="web-development-img" src="/assets/innovation.png" alt="" class="development-imgs">
         </div>
       </div>
 
       <div class="row hide-on-med-and-up">
         <div class="col s12 center">
-          <img id="s-web-development-img" src="{{ "/assets/web-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="s-web-development-img" src="/assets/web-dev.png" alt="" class="development-imgs">
         </div>
         <div class="col s12 center-align">
           <ul id="s-web-development-txt">
@@ -143,7 +186,7 @@ layout: default
 
       <div class="row hide-on-small-only">
         <div class="col s12 m5 center">
-          <img id="mobile-development-img" src="{{ "/assets/web-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="mobile-development-img" src="/assets/web-dev.png" alt="" class="development-imgs">
         </div>
 
         <ul id="mobile-development-txt">
@@ -162,7 +205,7 @@ layout: default
 
       <div class="row hide-on-med-and-up">
         <div class="col s12 m5 center">
-          <img id="s-mobile-development-img" src="{{ "/assets/mobile-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="s-mobile-development-img" src="/assets/mobile-dev.png" alt="" class="development-imgs">
         </div>
 
         <ul id="s-mobile-development-txt">
@@ -191,13 +234,13 @@ layout: default
         </ul>
 
         <div class="col s12 m5 center ">
-          <img id="security-img" src="{{ "/assets/mobile-dev.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="security-img" src="/assets/mobile-dev.png" alt="" class="development-imgs">
         </div>
       </div>
 
       <div class="row hide-on-med-and-up">
         <div class="col s12 center">
-          <img id="s-security-img" src="{{ "/assets/integration.png" | prepend: site.baseurl }}" alt="" class="development-imgs">
+          <img id="s-security-img" src="/assets/integration.png" alt="" class="development-imgs">
         </div>
         <div class="col s12 center-align">
           <ul id="s-security-txt">
@@ -212,11 +255,222 @@ layout: default
       </div>
     </div>
   </div>
+
 </div>
+
+<div class="parallax-middle">
+  <div class="parallax">
+    <img id="" class="home-parallax" src="/assets/color-pencil-tip.jpg" alt="">
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <h2 class='text-center'>Principais Contribuições</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 cards-container">
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Software Público Brasileiro</span>
+           <p>
+           É uma plataforma colaborativa contendo ferramentas integradas visualmente,
+           a nível de autenticação e busca integrada. Provendo serviços de rede social,
+           listas de email e forge para controle de versão.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="https://softwarepublico.gov.br">Link para a plataforma</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Noosfero</span>
+           <p>
+           Noosfero é uma plataforma web para redes de economia social e solidária
+           com blog, e-Porfolios, CMS, RSS, discussão temática, agenda de eventos e
+           inteligência coletiva para economia solidária no mesmo sistema.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="http://noosfero.org/">Página oficial do Noosfero</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Colab</span>
+           <p>
+           Permite a integração de ferramentas no que diz respeito a autenticação
+           única, busca global e visual. Através de sinais é possível a comunicação
+           entre as ferramentas integradas.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="https://github.com/colab/colab">Repositório do Colab</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Debian</span>
+           <p>
+           Sistema operacional livre, sendo esse o maior projeto de software livre
+           do mundo. Havendo contribuições no desenvolvimento de ferramentas de integração
+           contínua, deploy de aplicações web e construção de pacotes. Além de membros
+           dos time manterem pacotes dentro do sistema.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="https://www.debian.org/">Página oficial do Debian</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Mezuro</span>
+           <p>
+             Mezuro é ma plataforma web livre para avaliação colaborativa de código fonte,
+             você pode avaliar seu código fonte com os SCMs mais populares (como Git e SVN),
+             você pode avaliar códigos em C, C++, Java, Ruby e Python.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="http://mezuro.org/">Página Oficial do Mezuro</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Analizo</span>
+           <p>
+             Analizo é uma toolkit de ferramentas livre, multi-linguagem,
+             de análise de código fonte extensível e visualização de métricas.
+             Ele suporta a extração e cálculo de um bom número de métricas de
+             código fonte, geração de gráficos de dependência e análise de
+             evolução do software.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="http://www.analizo.org/">Página Oficial do Analizo</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">Radar Parlamentar</span>
+           <p>
+             A tecnologia a serviço do cidadão / cidadã - É uma
+             ferramenta para análise partidária das casas legislativas.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="http://radarparlamentar.polignu.org/">Página do Radar Parlamentar</a>
+         </div>
+        </div>
+       <div class="card light-blue darken-4">
+         <div class="card-content white-text">
+           <span class="card-title">GestorPsi</span>
+           <p>
+             GestorPsi é uma ferramenta para gerenciar via Web as rotinas administrativas
+             e técnicas e manter sua documentação regularizada segundo as
+             normas éticas e profissionais do Conselho de Psicologia.
+           </p>
+         </div>
+         <div class="card-action">
+           <a href="http://portal.gestorpsi.com.br/">Página do GestorPsi</a>
+         </div>
+        </div>
+      </div>
+  </div>
+</div>
+
 
 
 <div class="parallax-middle">
   <div class="parallax">
-    <img id="" class="home-parallax" src="{{ "/assets/color-pencil-tip.jpg" | prepend: site.baseurl }}" alt="">
+    <img id="parallax-end" class="home-parallax" src="/assets/colored-pencils.jpg" alt="">
   </div>
 </div>
+
+    <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        <h3 class="white-text">Dúvidas?</h3>
+        <p class="grey-text text-lighten-4">
+          Acompanhe nossas redes sociais para saber as últimas novidades da Pencillabs,
+          você também pode entrar em contato conosco pelo nosso telefone ou pelo email.
+        </p>
+      </div>
+      <div class="col s6 footer-social">
+        <div class="row">
+          <div class="col s4">
+            <a href="https://facebook.com/pencillabs">
+              <i class="small fa fa-facebook fa-inverse icon-position">
+                <div class="facebook-content">
+                  facebook.com/pencillabs
+                </div>
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <a href="#">
+              <i class="small fa fa-envelope fa-inverse icon-position">
+                <div class="contact-content">
+                  contato@pencillabs.com
+                </div>
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s4">
+            <a href="#">
+              <i class="small fa fa-phone fa-inverse icon-position">
+                <div class="phone-content">
+                  (61)&nbsp;4063-7257
+                </div>
+              </i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright">
+    <div class="container center">
+      © Pencil Labs, 2015
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="/js/bin/materialize.min.js"></script>
+  <script type="text/javascript" src="/js/scroll_navbar.js"></script>
+  <script>
+  $(document).ready(function() {
+    $(".button-collapse").sideNav();
+    $(".parallax").parallax();
+
+    var methods = ["showStaggeredList","showStaggeredList","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage","showStaggeredList","fadeInImage"
+    ];
+    var offsets = [100,250,400,400,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200,200
+    ];
+    var divs = ["#loading","#service-focused","#contact-us","#parallax-end","#innovation-txt","#innovation-img","#s-innovation-txt","#s-innovation-img","#web-development-txt","#web-development-img","#s-web-development-txt","#s-web-development-img","#mobile-development-txt","#mobile-development-img","#s-mobile-development-txt","#s-mobile-development-img","#machine-learn-txt","#machine-learn-img","#s-machine-learn-txt","#s-machine-learn-img","#consultancies-txt","#consultancies-img","#s-consultancies-txt","#s-consultancies-img","#security-txt","#security-img","#s-security-txt","#s-security-img"
+    ];
+    var options = [];
+    for (var i = 0; i < divs.length; i++) {
+      options[i] = {selector: divs[i], offset: offsets[i], callback: 'Materialize.' + methods[i] + '("' + divs[i] + '")'};
+    };
+    console.log(options);
+    Materialize.scrollFire(options);
+  })
+  </script>
+</footer>
+
+
+  </body>
+
+</html>
