@@ -148,3 +148,18 @@ h1, h2, h3, h4, h5, h6 {
 .navbar.transparent.navbar-inverse .navbar-inner {
   background: rgba(0,0,0,0.4);
 }
+
+.card-members-content
+ {
+  line-height: 2 rem;
+  height: 14rem;
+}
+
+.card-members-content {
+  padding: 10px !important;
+  height: 100px !important;
+}
+
+.card-members-image {
+  height: 14rem !important;
+}
