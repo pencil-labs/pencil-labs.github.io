@@ -156,10 +156,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-members-content {
+
   padding: 10px !important;
   height: 100px !important;
 }
 
 .card-members-image {
   height: 14rem !important;
+}
+
+.contact-block {
+  @extend .z-depth-3;
+  position: fixed;
+  transform: translateY(-50%);
+  width: 4rem;
+  background-color: color('pencil','background');
+  top: 50%;
+  border-radius: 0rem 1rem 1rem 0rem;
+  padding: 1rem;
+  ul{
+    @extend .center-align;
+  }
+  li{
+    margin-top: 1rem;
+  }
 }

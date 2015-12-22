@@ -12480,7 +12480,7 @@ ul li {
 }
 
 /* line 71, ../_sass/components/_global.scss */
-.z-depth-3 {
+.z-depth-3, .contact-block {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -12742,7 +12742,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 0px;
   padding-top: 0px;
-  background-color: #1a237e;
+  background-color: #00aad4;
 }
 /* line 308, ../_sass/components/_global.scss */
 footer.page-footer .footer-copyright {
@@ -13224,7 +13224,7 @@ nav ul a span.badge {
 }
 
 /* line 690, ../_sass/components/_global.scss */
-.center, .center-align {
+.center, .center-align, .contact-block ul {
   text-align: center;
 }
 
@@ -22184,7 +22184,22 @@ h1, h2, h3, h4, h5, h6 {
   height: 100px !important;
 }
 
-/* line 163, ../_sass/_pencil.scss */
+/* line 164, ../_sass/_pencil.scss */
 .card-members-image {
   height: 14rem !important;
+}
+
+/* line 168, ../_sass/_pencil.scss */
+.contact-block {
+  position: fixed;
+  transform: translateY(-50%);
+  width: 4rem;
+  background-color: #F3F8F9;
+  top: 50%;
+  border-radius: 0rem 1rem 1rem 0rem;
+  padding: 1rem;
+}
+/* line 180, ../_sass/_pencil.scss */
+.contact-block li {
+  margin-top: 1rem;
 }
