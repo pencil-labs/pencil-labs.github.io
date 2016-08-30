@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/* line 5, ../../../sass/pencil-work-card.scss */
+.icon-area {
+  height: 10em;
+  width: 100%;
+  background-color: #e9f2f4;
+  text-align: center;
+}
+
+/* line 12, ../../../sass/pencil-work-card.scss */
+.icon {
+  position: absolute;
+  background-color: #fafcfc;
+  display: inline-block;
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  margin-top: 5.5rem;
+  margin-left: -4.5rem;
+}
+/* line 22, ../../../sass/pencil-work-card.scss */
+.icon iron-icon {
+  margin-top: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  color: #FFB713;
+}
+
+/* line 30, ../../../sass/pencil-work-card.scss */
+.content-area {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  height: 10rem;
+  background-color: #F3F8F9;
+  font-family: "Advent Pro";
+  vertical-align: middle;
+}
+/* line 39, ../../../sass/pencil-work-card.scss */
+.content-area h1 {
+  text-align: center;
+  color: #006077;
+  font-weight: 300;
+}
+
+/* line 45, ../../../sass/pencil-work-card.scss */
+.content-area ::content > p {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: #101015;
+}

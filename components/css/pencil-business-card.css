@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/* line 5, ../../../sass/pencil-business-card.scss */
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 10, ../../../sass/pencil-business-card.scss */
+.collaboration {
+  background-color: #00aad4;
+}
+
+/* line 14, ../../../sass/pencil-business-card.scss */
+.mvp {
+  background-color: #00b2de;
+}
+
+/* line 18, ../../../sass/pencil-business-card.scss */
+.main-title {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+/* line 23, ../../../sass/pencil-business-card.scss */
+iron-icon {
+  width: auto;
+  height: 6rem;
+  color: #F3F8F9;
+}
+
+/* line 29, ../../../sass/pencil-business-card.scss */
+.content-wrapper {
+  margin: 4rem 4rem 4rem 4rem;
+}
+
+/* line 33, ../../../sass/pencil-business-card.scss */
+.content-wrapper ::content > .topic {
+  color: #F3F8F9;
+  font-family: "AdventPro";
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+/* line 39, ../../../sass/pencil-business-card.scss */
+.content-wrapper ::content > .topic h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+/* line 47, ../../../sass/pencil-business-card.scss */
+.title, h1 {
+  font-family: "AdventPro";
+  text-align: center;
+}
+
+/* line 53, ../../../sass/pencil-business-card.scss */
+h1 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  color: #F3F8F9;
+}
+
+/* line 60, ../../../sass/pencil-business-card.scss */
+p {
+  font-family: "AdventPro";
+  font-size: 1.5rem;
+}

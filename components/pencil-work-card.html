@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-iconset/iron-iconset.html">
+<link rel="import" href="../../bower_components/iron-iconset-svg/iron-iconset-svg.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+
+<dom-module id="pencil-work-card">
+	<link rel="import" type="css" href="./css/pencil-work-card.css">
+
+	<template>
+		<div class="icon-area">
+			<div class="icon">
+				<iron-icon icon="{{icon}}"></iron-icon>
+			</div>
+		</div>
+		<div class="content-area">
+			<h1>{{title}}</h1>
+			<content></content>
+		</div>
+	</template>
+	<script>
+		Polymer({
+			is: 'pencil-work-card',
+			properties: {
+				icon: String,
+				title: String
+			}
+		});
+	</script>
+</dom-module>

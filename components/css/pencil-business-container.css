@@ -1,0 +1,11 @@
+/* line 1, ../../../sass/_flex.scss */
+.flex {
+  @apply (--layout-horizontal);
+  @apply (--layout-wrap);
+  width: 100%;
+}
+
+/* line 7, ../../../sass/_flex.scss */
+.flexchild {
+  @apply (--layout-flex);
+}

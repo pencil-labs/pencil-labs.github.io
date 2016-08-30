@@ -1,0 +1,19 @@
+/* line 1, ../../../sass/_flex.scss */
+.flex {
+  @apply (--layout-horizontal);
+  @apply (--layout-wrap);
+  width: 100%;
+}
+
+/* line 7, ../../../sass/_flex.scss */
+.flexchild {
+  @apply (--layout-flex);
+}
+
+/* line 5, ../../../sass/pencil-card-container.scss */
+pencil-card-image {
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(30deg, #007591, #003744);
+  background-image: -o-linear-gradient(30deg, #007591, #003744);
+  background-image: linear-gradient(30deg, #007591, #003744);
+}

@@ -1,0 +1,99 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="./pencil-business-card.html">
+
+<dom-module id="pencil-business-container">
+	<link rel="import" type="css" href="./css/pencil-business-container.css">
+
+	<template>
+		<iron-media-query query="(max-width: 1000px)" query-matches="{{small}}"></iron-media-query>
+  	<iron-media-query query="(min-width: 1001px)" query-matches="{{large}}"></iron-media-query>
+
+  	<template is="dom-if" if={{large}}>
+	  	<div class="container flex">
+	  		<div class="flexchild">
+					<pencil-business-card type="collaboration" icon="pencil:collaboration" title="podemos trabalhar juntos...">
+						<div class="topic">
+							<h2>Desenvolvemos o seu produto</h2>
+							<p>sem um investimento inicial, só precisamos que sua ideia esteja bem estruturada e validada.</p>
+						</div>
+						<div class="topic">
+							<h2>Cuidaremos da parte técnica</h2>
+							<p>você não vai precisar mais pensar em tecnologia e poderá focar totalmente no negócio.</p>
+						</div>
+						<div class="topic">
+							<h2>E seremos felizes pra sempre</h2>
+							<p>pois faremos de tudo para que o sua ideia dê certo, assim cresceremos juntos!</p>
+						</div>
+					</pencil-business-card>
+				</div>
+				<div class="flexchild">
+	        	<pencil-business-card type="mvp" icon="pencil:mvp" title="...ou pra você!">
+		        	<div class="topic">
+								<h2>Desenvolvemos o seu Produto Mínimo</h2>
+								<p>nos mostre o que você precisa para sua ideia começar a rodar, nós fazemos pra você!</p>
+							</div>
+							<div class="topic">
+								<h2>Entregamos à curto prazo</h2>
+								<p>vamos avaliar o escopo do seu produto mínimo e faremos adaptações para te entregar em um mês.</p>
+							</div>
+							<div class="topic">
+								<h2>O produto é todo seu</h2>
+								<p>após a entrega final, passamos o controle total do seu produto para você.</p>
+							</div>
+	        	</pencil-business-card>
+	      </div>
+	  	</div>
+	  </template>
+
+	  <template is="dom-if" if={{small}}>
+	  	<div class="container flex">
+	  		<div class="flexchild">
+				<div class="flexchild">
+					<pencil-business-card type="collaboration" icon="pencil:collaboration" title="podemos trabalhar juntos...">
+						<div class="topic">
+							<h2>Desenvolvemos o seu produto</h2>
+							<p>sem um investimento inicial, só precisamos que sua ideia esteja bem estruturada e validada.</p>
+						</div>
+						<div class="topic">
+							<h2>Cuidaremos da parte técnica</h2>
+							<p>você não vai precisar mais pensar em tecnologia e poderá focar totalmente no negócio.</p>
+						</div>
+						<div class="topic">
+							<h2>E seremos felizes pra sempre</h2>
+							<p>pois faremos de tudo para que o sua ideia dê certo, assim cresceremos juntos!</p>
+						</div>
+					</pencil-business-card>
+				</div>
+			</div>
+			</div>
+			<div class="container flex">
+				<div class="flexchild">
+					<div class="flexchild">
+						<pencil-business-card type="mvp" icon="pencil:mvp" title="ou pra você!">
+							<div class="topic">
+								<h2>Desenvolvemos o seu Produto Mínimo</h2>
+								<p>nos mostre o que você precisa para sua ideia começar a rodar, nós fazemos pra você!</p>
+							</div>
+							<div class="topic">
+								<h2>Entregamos à curto prazo</h2>
+								<p>vamos avaliar o escopo do seu produto mínimo e faremos adaptações para te entregar em um mês.</p>
+							</div>
+							<div class="topic">
+								<h2>O produto é todo seu</h2>
+								<p>após a entrega final, passamos o controle total do seu produto para você.</p>
+							</div>
+						</pencil-business-card>
+					</div>
+	      </div>
+	  	</div>
+	  </template>
+
+	</template>
+	<script>
+		Polymer({
+			is: 'pencil-business-container'
+		});
+	</script>
+</dom-module>

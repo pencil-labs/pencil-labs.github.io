@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/* line 5, ../../../sass/pencil-footer.scss */
+.footer-info {
+  background-color: #101015;
+  color: #F3F8F9;
+  text-align: center;
+  width: 100%;
+  font-family: "AdventPro";
+}
+
+/* line 13, ../../../sass/pencil-footer.scss */
+ul {
+  list-style-type: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  overflow: hidden;
+}
+
+/* line 22, ../../../sass/pencil-footer.scss */
+li {
+  float: left;
+}
+
+/* line 26, ../../../sass/pencil-footer.scss */
+li.credits {
+  float: right;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+/* line 35, ../../../sass/pencil-footer.scss */
+.credits small {
+  color: #006077;
+}
+
+/* line 39, ../../../sass/pencil-footer.scss */
+li iron-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* line 44, ../../../sass/pencil-footer.scss */
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-property: background-color, padding;
+  transition-duration: 0.3s;
+}
+
+/* line 55, ../../../sass/pencil-footer.scss */
+li a:hover {
+  background-color: #006077;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  transition-property: background-color, padding;
+  transition-duration: 0.3s;
+}

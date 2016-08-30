@@ -1,0 +1,61 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="./pencil-image-card.html">
+
+
+<dom-module id="pencil-card-container">
+  <link rel="import" type="css" href="./css/pencil-card-container.css">
+  <template>
+  	<iron-media-query query="(max-width: 700px)" query-matches="{{small}}"></iron-media-query>
+  	<iron-media-query query="(min-width: 701px)" query-matches="{{large}}"></iron-media-query>
+
+  	<div class="container flex" >
+  		<template is="dom-if" if={{large}}>
+  			<div class="container flex">
+  				<div class="flexchild">
+  					<pencil-image-card image="../img/dreams.jpg" content="sonhe"></pencil-image-card>
+  				</div>
+          <div class="flexchild">
+            <pencil-image-card image="../img/idea.jpg" content="idealize"></pencil-image-card>
+          </div>
+          <div class="flexchild">
+            <pencil-image-card image="../img/design.jpg" content="projete"></pencil-image-card>
+          </div>
+  			</div>
+        <div class="container flex">
+          <div class="flexchild">
+            <pencil-image-card image="../img/together.jpg" content="nós contruímos. juntos."></pencil-image-card>
+          </div>
+        </div>
+  		</template>
+  		<template is="dom-if" if={{small}}>
+        <div class="container flex">
+          <div class="flexchild">
+            <pencil-image-card image="../img/dreams.jpg" content="sonhe"></pencil-image-card>
+          </div>
+        </div>
+        <div class="container flex">
+          <div class="flexchild">
+            <pencil-image-card image="../img/idea.jpg" content="idealize"></pencil-image-card>
+          </div>
+        </div>
+        <div class="container flex">
+          <div class="flexchild">
+            <pencil-image-card image="../img/design.jpg" content="projete"></pencil-image-card>
+          </div>
+        </div>
+        <div class="container flex">
+          <div class="flexchild">
+            <pencil-image-card image="../img/together.jpg" content="nós contruímos. juntos."></pencil-image-card>
+          </div>
+        </div>
+      </template>
+  	</div>
+  </template>
+  <script>
+    Polymer({
+      is: 'pencil-card-container',
+    });
+  </script>
+</dom-module>
