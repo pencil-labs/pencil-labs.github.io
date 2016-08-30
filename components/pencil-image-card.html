@@ -1,4 +1,4 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/polymer/polymer.html">
 
 <dom-module id="pencil-image-card">
   <link rel="import" type="css" href="./css/pencil-image-card.css">
@@ -12,12 +12,12 @@
   </style>
   <template>
 
-  	<div class="image-card">
-  		<div id="overlay" class="overlay bg-image"></div>
+    <div class="image-card">
+      <div id="overlay" class="overlay bg-image"></div>
       <div class="content">
-  		  <h1>{{content}}</h1>
+        <h1>{{content}}</h1>
       </div>
-  	</div>
+    </div>
   </template>
   <script>
     Polymer({
@@ -28,7 +28,7 @@
       },
       setBackground: function () {
           var baseURL = window.location.href;
-          var themeURL = "wp-content/themes/pencillabs-theme/public/components/";
+          var themeURL = "/components/";
           var finalURL = baseURL + themeURL + this.image;
           var bg = "url('" + finalURL + "')"
           console.log(window.location.href)
