@@ -1,3 +1,0 @@
-compass watch _sass/ &
-bundle exec jekyll serve
-killall compass 2>&1&> /dev/null 
