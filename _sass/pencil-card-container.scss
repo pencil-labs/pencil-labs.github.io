@@ -1,0 +1,7 @@
+@import "color.scss";
+@import "gradients.scss";
+@import "flex.scss";
+
+pencil-card-image {
+    @include gradient-directional(lighten($pencil-dark-blue, 5), darken($pencil-dark-blue, 10), 30deg);
+}
