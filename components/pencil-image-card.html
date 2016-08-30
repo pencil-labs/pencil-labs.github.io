@@ -1,0 +1,43 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="pencil-image-card">
+  <link rel="import" type="css" href="./css/pencil-image-card.css">
+  <style>
+    :host {
+      --image-url: 'none';
+    }
+   .bg-image {
+    background-image: var(--image-url);
+   }
+  </style>
+  <template>
+
+    <div class="image-card">
+      <div id="overlay" class="overlay bg-image"></div>
+      <div class="content">
+        <h1>{{content}}</h1>
+      </div>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'pencil-image-card',
+      properties: {
+        image: String,
+        content: String
+      },
+      setBackground: function () {
+          var baseURL = window.location.href;
+          var themeURL = "/components/";
+          var finalURL = baseURL + themeURL + this.image;
+          var bg = "url('" + finalURL + "')"
+          console.log(window.location.href)
+          this.customStyle['--image-url'] = bg;
+          this.updateStyles();
+      },
+      attached: function () {
+        this.setBackground();
+      }
+    });
+  </script>
+</dom-module>

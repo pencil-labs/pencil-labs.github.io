@@ -1,0 +1,76 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
+<link rel="import" href="./pencil-work-card.html">
+
+
+<dom-module id="pencil-work-container">
+	<link rel="import" type="css" href="./css/pencil-work-container.css">
+
+	<template>
+			<iron-media-query query="(max-width: 700px)" query-matches="{{small}}"></iron-media-query>
+  		<iron-media-query query="(min-width: 701px)" query-matches="{{large}}"></iron-media-query>
+
+  		<template is="dom-if" if={{large}}>
+	  		<div class="container flex">
+		  		<div class="flexchild">
+						<pencil-work-card icon="pencil:comunication" title="comunicação">
+							<p>
+								desenvolvimento transparente e máxima interação com nossos clientes
+							</p>
+						</pencil-work-card>
+		  		</div>
+		  		<div class="flexchild">
+						<pencil-work-card icon="pencil:code" title="desenvolvimento">
+							<p>
+								o que a sua ideia precisa e a qualidade do software em primeiro lugar
+							</p>
+						</pencil-work-card>
+		  		</div>
+		  		<div class="flexchild">
+						<pencil-work-card icon="pencil:delivery" title="entrega contínua">
+							<p>
+								uma nova parte do seu software rodando a cada iteração
+							</p>
+						</pencil-work-card>
+		  		</div>
+		  	</div>
+  		</template>
+
+  		<template is="dom-if" if={{small}}>
+	  		<div class="container flex">
+		  		<div class="flexchild">
+						<pencil-work-card icon="pencil:comunication" title="comunicação">
+							<p>
+								desenvolvimento transparente e máxima interação com nossos clientes
+							</p>
+						</pencil-work-card>
+		  		</div>
+		  	</div>
+		  	<div class="container flex">
+		  		<div class="flexchild">
+						<pencil-work-card icon="pencil:code" title="desenvolvimento">
+							<p>
+								o que a sua ideia precisa e a qualidade do software em primeiro lugar
+							</p>
+						</pencil-work-card>
+		  		</div>
+		  	</div>
+		  	<div class="container flex">
+		  		<div class="flexchild">
+						<pencil-work-card icon="pencil:delivery" title="entrega contínua">
+							<p>
+								uma nova parte do seu software rodando a cada iteração
+							</p>
+						</pencil-work-card>
+		  		</div>
+		  	</div>
+		  	</div>
+  	</template>
+	</template>
+	<script>
+		Polymer({
+			is: 'pencil-work-container'
+		});
+	</script>
+</dom-module>

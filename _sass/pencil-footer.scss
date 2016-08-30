@@ -1,0 +1,61 @@
+@import "color.scss";
+@import "adventpro.scss";
+
+
+.footer-info {
+    background-color: $pencil-black;
+    color: $pencil-white;
+    text-align: center;
+    width: 100%;
+    font-family: "AdventPro";
+}
+
+ul {
+    list-style-type: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li.credits {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.credits small {
+    color: $pencil-dark-blue;
+}
+
+li iron-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition-property: background-color, padding;
+    transition-duration: 0.3s;
+}
+
+li a:hover {
+    background-color: $pencil-dark-blue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition-property: background-color, padding;
+    transition-duration: 0.3s;
+}

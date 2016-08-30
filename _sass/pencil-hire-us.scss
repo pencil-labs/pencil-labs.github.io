@@ -1,0 +1,58 @@
+@import "color.scss";
+@import "adventpro.scss";
+@import "flex.scss";
+
+.background {
+    background-color: lighten($pencil-black, 5);
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.center {
+    @apply(--layout-around-justified);
+    @apply(--layout-wrap);
+}
+
+
+.contact-message {
+    color: $pencil-white;
+    font-family: "AdventPro";
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 3rem;
+    text-align: center;
+
+    width: 40rem;
+
+    paper-icon-button.deal {
+        color: $pencil-yellow;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+}
+
+.form {
+    text-align: left;
+    width: 25rem;
+    color: $pencil-white;
+    padding-bottom: 5rem;
+}
+
+.custom-input {
+    --paper-input-container-color: $pencil-white;
+    --paper-input-container-focus-color: $pencil-yellow;
+    --paper-input-container-input-color: $pencil-white;
+}
+
+paper-input {
+    @extend .custom-input;
+}
+
+paper-textarea {
+    @extend .custom-input;
+}

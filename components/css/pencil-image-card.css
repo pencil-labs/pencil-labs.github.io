@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AdventPro";
+  src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/* line 6, ../../../sass/pencil-image-card.scss */
+.image-card {
+  background-image: -webkit-linear-gradient(top, #2d535a 0%, #101015 100%);
+  background-image: -o-linear-gradient(top, #2d535a 0%, #101015 100%);
+  background-image: linear-gradient(to bottom, #2d535a 0%, #101015 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF2D535A', endColorstr='#FF101015', GradientType=0);
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+/* line 15, ../../../sass/pencil-image-card.scss */
+.overlay {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  filter: grayscale(1);
+  transition-property: filter opacity;
+  transition-duration: 0.5s;
+}
+
+/* line 30, ../../../sass/pencil-image-card.scss */
+.dreams {
+  background-image: url("../../img/dreams.jpg");
+}
+
+/* line 34, ../../../sass/pencil-image-card.scss */
+.idea {
+  background-image: url("../../img/idea.jpg");
+}
+
+/* line 38, ../../../sass/pencil-image-card.scss */
+.design {
+  background-image: url("../../img/design.jpg");
+}
+
+/* line 42, ../../../sass/pencil-image-card.scss */
+.together {
+  background-image: url("../../img/together.jpg");
+}
+
+/* line 46, ../../../sass/pencil-image-card.scss */
+.overlay:hover {
+  opacity: 0.8;
+  filter: grayscale(0);
+  transition-property: filter opacity;
+  transition-duration: 0.5s;
+}
+
+/* line 53, ../../../sass/pencil-image-card.scss */
+.content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+/* line 57, ../../../sass/pencil-image-card.scss */
+.content h1 {
+  font-size: 3.2rem;
+  color: #F3F8F9;
+  transition-property: font-size;
+  transition-duration: 0.5s;
+}
+
+/* line 66, ../../../sass/pencil-image-card.scss */
+#overlay:hover ~ .content h1 {
+  font-size: 3.8rem;
+}
+
+/* line 71, ../../../sass/pencil-image-card.scss */
+.title, h1 {
+  font-family: "AdventPro";
+  text-align: center;
+}
+
+/* line 77, ../../../sass/pencil-image-card.scss */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+/* line 83, ../../../sass/pencil-image-card.scss */
+p {
+  font-family: "AdventPro";
+  font-size: 1.5rem;
+}
