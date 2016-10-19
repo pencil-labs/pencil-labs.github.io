@@ -38,13 +38,16 @@ ul {
   width: auto;
   margin: 0;
   padding: 0;
-  padding-left: 1rem;
   overflow: hidden;
 }
-
+@media (min-width: 48em) {
+  .footer-info {
+    text-align: left;
+  }
+}
 /* line 22, ../../../sass/pencil-footer.scss */
 li {
-  float: left;
+  display: inline;
 }
 
 /* line 26, ../../../sass/pencil-footer.scss */
@@ -53,7 +56,7 @@ li.credits {
   display: inline-block;
   text-align: center;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: 1rem;
 }
 
@@ -75,16 +78,12 @@ li a {
   text-align: center;
   padding: 1rem;
   text-decoration: none;
-  font-size: 1.2rem;
-  transition-property: background-color, padding;
+  font-size: 1em;
+  transition-property: background-color;
   transition-duration: 0.3s;
 }
 
 /* line 55, ../../../sass/pencil-footer.scss */
 li a:hover {
   background-color: #006077;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  transition-property: background-color, padding;
-  transition-duration: 0.3s;
 }
