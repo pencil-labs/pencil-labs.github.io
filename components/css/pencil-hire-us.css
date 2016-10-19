@@ -23,6 +23,11 @@
   src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+
+:host {
+  font-family: 'Roboto', 'Noto', sans-serif;
+}
+
 /* line 1, ../../../sass/_flex.scss */
 .flex {
   @apply (--layout-horizontal);

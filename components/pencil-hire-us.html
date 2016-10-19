@@ -1,6 +1,7 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-spinner/paper-spinner.html">
 <link rel="import" href="../bower_components/paper-input/paper-textarea.html">
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/iron-iconset/iron-iconset.html">
@@ -21,10 +22,31 @@
       </div>
       <div class="flex center">
         <div class="form">
-          <paper-textarea label="conte-nos um pouco sobre a sua ideia"></paper-textarea>
-          <paper-input class="send" label="email" type="email">
-            <paper-icon-button suffix icon="send"></paper-icon-button>
+          <paper-input class="send" label="Nome" value="{{name}}"></paper-input>
+          <paper-textarea label="conte-nos um pouco sobre a sua ideia"
+            value="{{description}}"></paper-textarea>
+          <paper-input id="email" class="send" label="email" type="email"
+            value="{{email}}" auto-validate>
+            <template is="dom-if" if="{{!loading}}">
+              <paper-icon-button suffix icon="send" on-tap="sendMail"></paper-icon-button>
+            </template>
+            <template is="dom-if" if="{{loading}}">
+              <paper-icon-button suffix icon="send" disabled></paper-icon-button>
+            </template>
           </paper-input>
+          <div class="g-recaptcha"
+            data-sitekey="6LfCsgkUAAAAAOqQR8RNCDowZe97WcZMI4eCLgmv"></div>
+          <div style="text-align: center">
+            <template is="dom-if" if="{{loading}}">
+              <paper-spinner alt="Enviando email" active></paper-spinner>
+            </template>
+            <template is="dom-if" if="{{success}}">
+              <span>Email enviado! Entraremos em contato.</span>
+            </template>
+            <template is="dom-if" if="{{error}}">
+              <span>Algo saiu errado. Tente novamente em alguns instantes.</span>
+            </template>
+            </div>
         </div>
       </div>
     </div>
@@ -32,6 +54,53 @@
   <script>
     Polymer({
       is: 'pencil-hire-us',
+      properties: {
+        email: String,
+        description: String,
+        name: String,
+        loading: {
+          type: Boolean,
+          value: false
+        },
+        success: {
+          type: Boolean,
+          value: false
+        },
+        error: {
+          type: Boolean,
+          value: false
+        }
+      },
+      sendMail: function() {
+        var self = this;
+        if(!this.$.email.invalid && this.name
+          && this.description && this.email) {
+
+          this.error = false;
+          this.success = false;
+          this.loading = true;
+
+          emailjs.send("gmail","novo_contato",{
+            email: this.email,
+            name: this.name,
+            description: this.description
+          }).then(function(response) {
+            self.error = false;
+            self.success = true;
+            self.loading = false;
+            self.clearForm();
+          }, function (err) {
+            self.error = true;
+            self.success = false;
+            self.loading = false;
+          });
+        }
+      },
+      clearForm: function() {
+        this.name = '';
+        this.email = '';
+        this.description = '';
+      }
     });
   </script>
 </dom-module>
