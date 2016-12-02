@@ -81,10 +81,9 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
+  margin-bottom: 5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -396,9 +395,10 @@ tbody tr:nth-child(odd) th {
 
 /* Pagination items can be `span`s or `a`s */
 .pagination-item {
-  display: block;
+  display: inline-block;
   padding: 1rem;
   border: 1px solid #eee;
+  width: 35%;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -412,10 +412,6 @@ a.pagination-item:hover {
 @media (min-width: 30em) {
   .pagination {
     margin: 3rem 0;
-  }
-  .pagination-item {
-    float: left;
-    width: 50%;
   }
   .pagination-item:first-child {
     margin-bottom: 0;
