@@ -10,19 +10,25 @@
 
 <dom-module id="pencil-footer">
   <link rel="import" type="css" href="./css/pencil-footer.css">
+  <style>
+    .footer-info ul {
+      margin: 0 20px;
+    }
+  </style>
   <template>
     <pencil-hire-us></pencil-hire-us>
     <div class="footer-info">
     <ul>
-      <li><a class="text" href="/blog"><iron-icon icon="question-answer"></iron-icon> Blog</a></li>
-      <li><a href="/team"><iron-icon icon="social:group"></iron-icon> Equipe</a></li>
       <li>
         <a href="https://facebook.com/pencillabs" target="_blank">
           <social-media-icons icon="facebook" size="15" color="white"
             href="https://facebook.com/pencillabs" newTab="true"></social-media-icons> Facebook
         </a>
       </li>
-      <li class="credits"><small>Desenhando o futuro. Juntos |</small> <strong>pencil</strong>labs <iron-icon icon="pencil:logo"></iron-icon></li>
+      <li class="credits">
+        <small>Desenhando o futuro. Juntos. |</small>
+        <strong> Pencil</strong>labs <iron-icon icon="pencil:logo"></iron-icon>
+      </li>
     </ul>
     </div>
   </template>

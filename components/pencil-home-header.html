@@ -1,0 +1,36 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./pencil-header.html">
+
+<dom-module id="pencil-home-header">
+  <style>
+    #header {
+      opacity: 0;
+      transition: all ease .35s;
+      position: fixed;
+      top: 0; right: 0; left: 0;
+      z-index: 99999;
+    }
+  </style>
+  <template>
+    <div class="footer-info">
+      <pencil-header id="header" selected="3"></pencil-header>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'pencil-home-header',
+      attached: function() {
+        var self = this;
+        window.onscroll = function() {
+          if(document.body.scrollTop > window.screen.height*0.5) {
+            self.$.header.style.opacity = "1";
+          }
+          else {
+            self.$.header.style.opacity = "0";
+          }
+        }
+      }
+    });
+  </script>
+</dom-module>
+
