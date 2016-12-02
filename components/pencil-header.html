@@ -1,0 +1,90 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-iconset/iron-iconset.html">
+<link rel="import" href="./pencil-icons.html">
+
+<dom-module id="pencil-header">
+  <style>
+    :root {
+      --paper-tab-ink: #FFB713;
+    }
+    paper-toolbar {
+      --paper-toolbar-background: white;
+    }
+    paper-tabs {
+      --paper-tabs-selection-bar-color: #FFB713;
+      color: #003744;
+    }
+    a.link {
+      display: inline-block;
+      padding-top: 10px;
+    }
+    --paper-tabs-selection-bar {
+      color: #FFB713;
+    }
+    paper-toolbar a:hover,
+    paper-toolbar a {
+      color: #003744;
+      text-decoration:none;
+    }
+    paper-toolbar a span {
+      font-weight: bolder; 
+    }
+    .space {
+      @apply(--layout-flex);
+    }
+    .app-name {
+      font-family: 'AdventPro', sans-serif;
+    }
+  </style>
+  <template>
+    <div class="background">
+      <paper-toolbar>
+        <div class="left">
+          <div class="app-name">
+            <a href="/">
+              <iron-icon class="logo" icon="pencil:logo"></iron-icon>
+              <span>{{first}}</span>{{second}}
+            </a>
+          </div>
+        </div>
+        <span class="space">
+        </span>
+        <div class="right">
+          <paper-tabs selected="{{selected}}">
+            <paper-tab>
+              <a class="link" href="/team">Time</a>
+            </paper-tab>
+            <paper-tab>
+              <a class="link" href="/projects">Projetos</a>
+            </paper-tab>
+            <paper-tab>
+              <a class="link" href="/blog">Blog</a>
+            </paper-tab>
+          </paper-tabs>
+        </div>
+      </paper-toolbar>
+    </div>
+  </template>
+  <script>
+    Polymer({
+      is: 'pencil-header',
+      properties: {
+        first: {
+          type: String,
+          value: 'Pencil'
+        },
+        second: {
+          type: String,
+          value: 'labs'
+        },
+        selected: {
+          type: Number,
+          value: 0
+        }
+      }
+    });
+  </script>
+</dom-module>

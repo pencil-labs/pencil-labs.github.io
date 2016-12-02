@@ -1,0 +1,24 @@
+h1 {
+  margin-bottom: 50px;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  min-height: 400px;
+}
+ul li ul li {
+  min-height: 0;  
+}
+ul li:nth-child(even) ul li img {
+  float: right;
+}
+ul li:nth-child(odd) ul li img {
+  float: left;
+}
+img {
+  min-width: 320px;
+  max-width: 320px;
+  padding-right: 20px;
+  border-radius: 0;
+}
