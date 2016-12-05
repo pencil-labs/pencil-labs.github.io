@@ -13,15 +13,24 @@
       <div class="banner"></div>
       <div class="logo-wrapper">
         <iron-icon icon="pencil:logo"></iron-icon>
-        <h1>pencil<span>labs</span></h1>
-        <h2>desenhando o futuro. <span>Juntos!</span></h2>
+        <h1>Pencil<span>labs</span></h1>
+        <h2>Desenhando o futuro. <span>Juntos!</span></h2>
       </div>
-      <paper-icon-button icon="arrow-downward"></paper-icon-button>
+      <paper-icon-button icon="arrow-downward" on-tap="scroll"></paper-icon-button>
     </div>
   </template>
   <script>
     Polymer({
       is: 'pencil-banner',
+      scroll: function() {
+        if(window) {
+          window.scroll({
+            top: window.innerHeight - 60,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
     });
   </script>
 </dom-module>

@@ -2,25 +2,26 @@
   "name": "pencillabs",
   "homepage": "https://github.com/pencill-labs/penci-llabs-github.io",
   "authors": [
-      "Matheus Fernandes <matheus.souza.fernandes@gmail.com>",
-      "Thiago Ribeiro <thiagitosouza@gmail.com>"
-    ],
+    "Matheus Fernandes <matheus.souza.fernandes@gmail.com>",
+    "Thiago Ribeiro <thiagitosouza@gmail.com>"
+  ],
   "description": "",
   "main": "",
   "moduleType": [],
   "license": "MIT",
   "ignore": [
-      "**/.*",
-      "node_modules",
-      "bower_components",
-      "test",
-      "tests"
-    ],
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-      "iron-elements": "polymerelements/iron-elements#~1.0.8",
-      "neon-animation": "PolymerElements/neon-animation#~1.0.6",
-      "paper-elements": "polymerelements/paper-elements#~1.0.7",
-      "polymer": "Polymer/polymer#^1.2.4",
-      "social-media-icons": "^1.0.3"
-    }
+    "iron-elements": "polymerelements/iron-elements#~1.0.8",
+    "neon-animation": "PolymerElements/neon-animation#~1.0.6",
+    "paper-elements": "polymerelements/paper-elements#~1.0.7",
+    "polymer": "Polymer/polymer#^1.2.4",
+    "social-media-icons": "^1.0.3",
+    "smoothscroll": "^0.3.4"
+  }
 }

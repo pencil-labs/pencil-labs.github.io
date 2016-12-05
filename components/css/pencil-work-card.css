@@ -34,7 +34,7 @@
 /* line 12, ../../../sass/pencil-work-card.scss */
 .icon {
   position: absolute;
-  background-color: #fafcfc;
+  background-color: #FFF;
   display: inline-block;
   border-radius: 50%;
   width: 9rem;
@@ -56,7 +56,7 @@
   padding-bottom: 3rem;
   width: 100%;
   height: 10rem;
-  background-color: #F3F8F9;
+  background-color: #f9fafc;
   font-family: "Advent Pro";
   vertical-align: middle;
 }

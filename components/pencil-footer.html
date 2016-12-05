@@ -13,21 +13,54 @@
   <style>
     .footer-info ul {
       margin: 0 20px;
+      height: 3.5rem;
+    }
+    a {
+      max-width: 30px;
+    }
+    a span {
+      opacity: 1;
+      position: relative;
+      z-index: 1;
+      top: -29px;
+      transition: opacity ease .35s;
+    }
+    a:hover span {
+      opacity: 0;
     }
   </style>
   <template>
-    <pencil-hire-us></pencil-hire-us>
+    <content></content>
     <div class="footer-info">
     <ul>
       <li>
         <a href="https://facebook.com/pencillabs" target="_blank">
-          <social-media-icons icon="facebook" size="15" color="white"
-            href="https://facebook.com/pencillabs" newTab="true"></social-media-icons> Facebook
+          <social-media-icons icon="facebook" size="25" color="#365899"
+            href="https://facebook.com/pencillabs" newTab="true"></social-media-icons>
+          <span>
+            <social-media-icons icon="facebook" size="25" color="white"
+              href="https://facebook.com/pencillabs" newTab="true"></social-media-icons>
+          </span>
+        </a>
+        <a href="https://github.com/pencil-labs" target="_blank">
+          <social-media-icons icon="github" size="25" color="#2f8e29"
+            href="https://github.com/pencil-labs" newTab="true"></social-media-icons>
+          <span>
+            <social-media-icons icon="github" size="25" color="white"
+            href="https://github.com/pencil-labs" newTab="true"></social-media-icons>
+          </span>
+        </a>
+        <a href="https://dribbble.com" target="_blank">
+          <social-media-icons icon="dribbble" size="25" color="#ea4c89"
+            href="https://dribbble.com" newTab="true"></social-media-icons>
+          <span>
+            <social-media-icons icon="dribbble" size="25" color="white"
+            href="https://dribbble.com" newTab="true"></social-media-icons>
+          </span>
         </a>
       </li>
       <li class="credits">
-        <small>Desenhando o futuro. Juntos. |</small>
-        <strong> Pencil</strong>labs <iron-icon icon="pencil:logo"></iron-icon>
+        <small>Desenhando o futuro. Juntos.</small>
       </li>
     </ul>
     </div>

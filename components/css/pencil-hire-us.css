@@ -42,7 +42,7 @@
 
 /* line 5, ../../../sass/pencil-hire-us.scss */
 .background {
-  background-color: #1b1b23;
+  background-color: #FFF;
   width: 100%;
   padding-top: 5rem;
 }
@@ -55,7 +55,7 @@
 
 /* line 17, ../../../sass/pencil-hire-us.scss */
 .contact-message {
-  color: #F3F8F9;
+  color: #003744;
   font-family: "AdventPro";
   font-size: 1.5rem;
   font-weight: 300;
@@ -79,13 +79,13 @@
 .form {
   text-align: left;
   width: 25rem;
-  color: #F3F8F9;
+  color: #003744;
   padding-bottom: 5rem;
 }
 
 /* line 46, ../../../sass/pencil-hire-us.scss */
 .custom-input, paper-input, paper-textarea {
-  --paper-input-container-color: #F3F8F9;
+  --paper-input-container-color: #003744;
   --paper-input-container-focus-color: #FFB713;
-  --paper-input-container-input-color: #F3F8F9;
+  --paper-input-container-input-color: #003744;
 }

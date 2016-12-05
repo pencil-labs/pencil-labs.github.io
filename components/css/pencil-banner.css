@@ -26,9 +26,9 @@
 /* line 5, ../../../sass/pencil-banner.scss */
 .background {
   background-repeat: repeat-x;
-  background-image: -webkit-linear-gradient(30deg, #007591, #003744);
-  background-image: -o-linear-gradient(30deg, #007591, #003744);
-  background-image: linear-gradient(30deg, #007591, #003744);
+  background-image: -webkit-linear-gradient(30deg, #014858, #003744);
+  background-image: -o-linear-gradient(30deg, #014858, #003744);
+  background-image: linear-gradient(30deg, #014858, #003744);
   height: 100vh;
   overflow: hidden;
   color: #F3F8F9;

@@ -27,3 +27,9 @@
   src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+#header {
+  transition: all ease .35s;
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  z-index: 99999;
+}

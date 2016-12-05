@@ -44,10 +44,8 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
-  filter: grayscale(1);
-  transition-property: filter opacity;
-  transition-duration: 0.5s;
+  opacity: 0.3;
+  transition: all ease .5s;
 }
 
 /* line 30, ../../../sass/pencil-image-card.scss */
@@ -73,9 +71,9 @@
 /* line 46, ../../../sass/pencil-image-card.scss */
 .overlay:hover {
   opacity: 0.8;
-  filter: grayscale(0);
-  transition-property: filter opacity;
-  transition-duration: 0.5s;
+}
+.overlay:hover ~ .content h1 {
+  transform: scale(1.2);
 }
 
 /* line 53, ../../../sass/pencil-image-card.scss */
@@ -91,14 +89,10 @@
 .content h1 {
   font-size: 3.2rem;
   color: #F3F8F9;
-  transition-property: font-size;
-  transition-duration: 0.5s;
+  transition: all ease .35s;
 }
 
 /* line 66, ../../../sass/pencil-image-card.scss */
-#overlay:hover ~ .content h1 {
-  font-size: 3.8rem;
-}
 
 /* line 71, ../../../sass/pencil-image-card.scss */
 .title, h1 {
