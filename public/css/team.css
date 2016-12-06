@@ -1,7 +1,18 @@
-h1 {
+h1.title {
   text-align: center;
   color: #003744;
+  background: #FFF;
+  padding: 7rem 0 3rem;
+  margin: 0;
 }
 h1 span {
   border-bottom: 3px solid #FFB713;
+}
+.background {
+  background: #003744;
+}
+.background > p {
+  padding: 3rem 4rem 0;
+  color: #FFF;
+  text-align: center;
 }

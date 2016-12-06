@@ -230,7 +230,6 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
 }
 
 /* Tables */
@@ -285,7 +284,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 48rem;
+  max-width: 54rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;

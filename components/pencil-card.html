@@ -11,42 +11,66 @@
   <style>
     :host {
       display: block;
-      margin-bottom: 30px;
+      background: #FFF;
     }
     h1 {
-      text-align: left;
       margin-bottom: .5rem;
+      color: #003744;
     }
     .image {
       float: left;
-      max-width: 40%;
-      margin:0 20px;
+      max-width: 50%;
+      width: 50%;
+      height: 400px;
+      overflow: hidden;
+    }
+    .image iron-image {
+      width: 100%;
+      height: 100%;
     }
     .main {
-      margin: 0 20px;
+      margin: 0;
+      padding: 1.3rem 2rem;
       float: left;
-      width: calc(50% - 40px);
+      height: calc(400px - 2.6rem);
+      width: calc(50% - 4rem);
+      position: relative;
+    }
+    .image.reverse,
+    .main.reverse {
+      float: right;
     }
     .description {
       color: #919191;
     }
-    @media (max-width: 768px) {
-      .image,
-      .main {
-        float: none;
-        margin: 20px;
-        max-width: none;
-        width: auto;
+    .abilities {
+      position: absolute;
+      bottom: 1rem;
+      left: 2rem;
+      right: 0;
+    }
+    @media (min-width: 769px) {
+      .ability {
+        margin: 0 1rem;
       }
+    }
+    @media (max-width: 768px) {
       .image {
-        text-align: center;
+        width: 100%;
+        max-width: none;
+      }
+      .main {
+        height: auto;
+        width: calc(100% - 4rem);
       }
       .ability {
         margin: 10px !important;
         display: inline-block !important;
       }
-      .content-wrapper {
-        border-bottom: 1px solid #E1E1E1;
+      .abilities {
+        position: inherit;
+        bottom: inherit;
+        left: inherit;
       }
     }
     @media (max-width: 480px) {
@@ -60,6 +84,9 @@
         margin: 10px !important;
         display: block !important;
       }
+      .ability:not(.DevOps0):not(.Developer0):not(.Designer0) {
+        width: 40%;
+      }
     }
     .ability {
       font-size: .7rem;
@@ -67,13 +94,12 @@
     .ability.DevOps0,
     .ability.Developer0,
     .ability.Designer0 {
-      display: block;
       font-size: 1rem;
       height: 50px;
       margin: 50px 0 20px;
       color: red;
     }
-    .ability.DevOps0 iron-icon, 
+    .ability.DevOps0 iron-icon,
     .ability.Developer0 iron-icon,
     .ability.Designer0 iron-icon {
       width: 50px;
@@ -88,13 +114,15 @@
   </style>
 	<template>
 		<div class="wrapper">
-      <div class="image">
-			<iron-image src="{{image}}"></iron-image>
+      <div class$="image {{reverse}}">
+			<iron-image sizing="cover" position="center" src="{{image}}"></iron-image>
       </div>
-			<div class="main">
+			<div class$="main {{reverse}}">
 				<h1>{{name}}</h1>
         <div class="content-wrapper">
           <p class="description">{{description}}</p>
+        </div>
+        <div class="abilities">
           <template is="dom-repeat" items="{{abilities}}">
             <span class$="ability {{item.name}}{{index}}"><iron-icon  icon="{{item.icon}}"></iron-icon>
               {{item.name}}
@@ -112,6 +140,7 @@
         name: String,
         description: String,
         image: String,
+        reverse: String,
         abilities: {
           type: Array,
           value: function() {
