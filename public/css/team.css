@@ -4,6 +4,7 @@ h1.title {
   background: #FFF;
   padding: 7rem 0 3rem;
   margin: 0;
+  font-size: 2.4rem;
 }
 h1 span {
   border-bottom: 3px solid #FFB713;
@@ -15,4 +16,16 @@ h1 span {
   padding: 3rem 4rem 0;
   color: #FFF;
   text-align: center;
+  font-size: 1.2rem;
+  max-width: 58rem;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .background > p {
+    padding: 2rem 2rem 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin: 0;
+  }
 }
