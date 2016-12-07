@@ -11,6 +11,9 @@ h1 span {
 }
 .background {
   background: #003744;
+  background-image: url(../../img/bg_pattern.jpg);
+  background-size: 100%;
+  background-position: top center;
 }
 .background > p {
   padding: 3rem 4rem 0;
