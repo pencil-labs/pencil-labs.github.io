@@ -1,0 +1,188 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+
+<dom-module id="pencil-participa">
+  <style>
+    :host {
+      position: relative;
+      display: block;
+    }
+    h1 {
+      margin-bottom: .5rem;
+      color: #003744;
+    }
+    p {
+      color: #919191;
+    }
+    .uplug,
+    .monetheus,
+    .lupa,
+    .participa {
+      display: block;
+      float: left;
+      margin: 10px;
+      padding: 20px;
+      background: #fff;
+    }
+    .image {
+      padding: 10px 10px 0;
+    }
+    .participa {
+      width: calc(60% - 60px);
+      height: 450px;
+    }
+    .lupa {
+      position: relative;
+      width: calc(100% - 60px);
+      height: 300px;
+    }
+    .lupa .image {
+      padding-top: 20px;
+      position: absolute;
+      width: calc(40% - 30px);
+      right: 0;
+      bottom: 0;
+      height: 830px;
+      background: #FFF;
+    }
+    .lupa .image iron-image {
+      width: 100%;
+      height: 100%;
+    }
+    .lupa .overlap {
+      position: absolute;
+      width: 22%;
+      right: 220px;
+      bottom: 0;
+    }
+    .lupa .description {
+      width: calc(60% - 60px);
+      height: 280px;
+      position: relative;
+      overflow: hidden;
+    }
+    .monetheus {
+      width: calc(60% - 60px);
+      height: 360px;
+    }
+    .monetheus .image {
+      height: 100%;
+    }
+    .monetheus .image iron-image {
+      width: 100%;
+      height: 100%;
+    }
+    .monetheus .description {
+      position: absolute;
+      right: 10px;
+      width: calc(60% - 60px);
+      padding: 20px;
+      background: #FFF;
+      height: 360px;
+    }
+    .uplug {
+      width: calc(40% - 20px);
+      height: 400px;
+      background: transparent;
+      padding: 0;
+    }
+    .uplug .wrapper {
+      height: 370px;
+      background: #FFF;
+    }
+    .uplug .image {
+      padding: 0;
+    }
+    .uplug .description {
+      padding: 20px;
+    }
+  </style>
+  <template>
+    <div class="participa">
+      <div class="image">
+        <iron-image
+          src="/img/participa.png"></iron-image>
+      </div>
+      <div class="description">
+        <h1><a href="#">Participa Campinas</a></h1>
+        <p>Bacon ipsum dolor amet leberkas jowl alcatra sausage chuck doner.
+        Pork beef pork belly t-bone bacon landjaeger pig andouille venison biltong ham hock.
+        Salami pork loin turducken biltong pork chop, shankle chicken strip steak boudin.</p>
+      </div>
+    </div>
+    <div class="lupa">
+      <div class="image">
+        <iron-image
+          src="/img/lupa-proj.png" sizing="cover"></iron-image>
+      </div>
+      <div class="overlap">
+        <iron-image
+          src="/img/lupa-mobile.png"></iron-image>
+      </div>
+      <div class="description">
+        <h1><a href="#">Projeto Lupa</a></h1>
+        <p>Bacon ipsum dolor amet leberkas jowl alcatra sausage chuck doner.
+        Pork beef pork belly t-bone bacon landjaeger pig andouille venison biltong ham hock.
+        Salami pork loin turducken biltong pork chop, shankle chicken strip steak boudin.</p>
+        <p>Bacon ipsum dolor amet leberkas jowl alcatra sausage chuck doner.
+        Pork beef pork belly t-bone bacon landjaeger pig andouille venison biltong ham hock.
+        Salami pork loin turducken biltong pork chop, shankle chicken strip steak boudin.</p>
+      </div>
+    </div>
+    <div class="monetheus">
+      <div class="image">
+        <iron-image sizing="cover" position="right"
+          src="/img/monetheus.png"></iron-image>
+      </div>
+      <div class="description">
+        <h1><a href="#">Monetheus</a></h1>
+        <p>Bacon ipsum dolor amet leberkas jowl alcatra sausage chuck doner.
+        Pork beef pork belly t-bone bacon landjaeger pig andouille venison biltong ham hock.
+        Salami pork loin turducken biltong pork chop, shankle chicken strip steak boudin.</p>
+      </div>
+    </div>
+    <div class="uplug">
+      <div class="wrapper">
+        <div class="image">
+          <iron-image
+            src="/img/uplugdev.png"></iron-image>
+        </div>
+        <div class="description">
+          <h1><a href="#">Uplug</a></h1>
+          <p>Bacon ipsum dolor amet leberkas jowl alcatra sausage chuck doner.
+          Pork beef pork belly t-bone bacon landjaeger pig andouille venison biltong ham hock.</p>
+        </div>
+      </div>
+    </div>
+    <div class="uplug">
+      <div class="wrapper">
+        <div class="image">
+          <iron-image
+            src="/img/uplugdev.png"></iron-image>
+        </div>
+        <div class="description">
+          <h1><a href="#">Uplug</a></h1>
+          <p>Bacon ipsum dolor amet leberkas jowl alcatra sausage chuck doner.
+          Pork beef pork belly t-bone bacon landjaeger pig andouille venison biltong ham hock.</p>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'pencil-participa',
+      scroll: function() {
+        if(window) {
+          window.scroll({
+            top: window.innerHeight - 60,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  </script>
+</dom-module>
+
