@@ -1,5 +1,6 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/iron-media-query/iron-media-query.html">
 
 <dom-module id="pencil-participa">
   <style>
@@ -96,8 +97,103 @@
     .uplug .description {
       padding: 20px;
     }
+    @media (max-width:768px) {
+      .uplug,
+      .monetheus,
+      .lupa,
+      .participa {
+        display: block;
+        margin: 10px;
+        padding: 20px;
+        background: #fff;
+        width: auto;
+        height: auto;
+      }
+      .image {
+        padding: 10px 17% 0;
+      }
+      .lupa .image {
+        position: inherit;
+        width: auto;
+        height: 301px;
+      }
+      .lupa .overlap {
+        width: 32%;
+        right: inherit;
+        bottom: 260px;
+      }
+      .monetheus .description,
+      .lupa .description {
+        width: auto;
+        height: auto;
+        position: inherit;
+        overflow: inherit;
+        padding: 0;
+      }
+      .monetheus .image {
+        padding: 0;
+        position: inherit;
+        width: auto;
+        height: 350px;
+      }
+      .uplug .wrapper {
+        height: auto;
+      }
+    }
+    @media (max-width:650px) {
+      .image {
+        padding: 10px 8% 0;
+      }
+      .lupa .image {
+        position: inherit;
+        width: auto;
+        height: 320px;
+      }
+      .lupa .overlap {
+        width: 40%;
+        right: inherit;
+        bottom: inherit;
+        top: 23%;
+      }
+      .monetheus .image {
+        height: 300px;
+      }
+    }
+    @media (max-width:480px) {
+      .image {
+        padding: 10px 2% 0;
+      }
+      .lupa .image {
+        position: inherit;
+        width: auto;
+        height: 340px;
+      }
+      .lupa .overlap {
+        width: 44%;
+        right: inherit;
+        bottom: inherit;
+        top: 28%;
+      }
+      .monetheus .image {
+        height: 230px;
+      }
+    }
+    @media (max-width:360px) {
+      .image {
+        padding: 10px 1% 0;
+      }
+      .lupa .image {
+        position: inherit;
+        width: auto;
+        height: 320px;
+      }
+      .monetheus .image {
+        height: 200px;
+      }
+    }
   </style>
   <template>
+    <iron-media-query query="(min-width: 769px)" query-matches="{{large}}"></iron-media-query>
     <div class="participa">
       <div class="image">
         <iron-image
@@ -113,7 +209,8 @@
     <div class="lupa">
       <div class="image">
         <iron-image
-          src="/img/lupa-proj.png" sizing="cover"></iron-image>
+          src="/img/lupa-proj.png" sizing="cover"
+          position$="{{ lupaPos }}"></iron-image>
       </div>
       <div class="overlap">
         <iron-image
@@ -131,7 +228,7 @@
     </div>
     <div class="monetheus">
       <div class="image">
-        <iron-image sizing="cover" position="right"
+        <iron-image sizing="{{ moneSize }}" position$="{{ monePos }}"
           src="/img/monetheus.png"></iron-image>
       </div>
       <div class="description">
@@ -173,6 +270,27 @@
   <script>
     Polymer({
       is: 'pencil-participa',
+      properties: {
+        large: {
+          type: Boolean,
+          observer: 'largeChanged'
+        },
+        monePos: String,
+        moneSize: String,
+        lupaPos: String
+      },
+      largeChanged: function(newLarge) {
+        if(newLarge) {
+          this.moneSize = 'cover';
+          this.lupaPos = '';
+          this.monePos = 'right';
+        }
+        else {
+          this.moneSize = 'contain';
+          this.lupaPos= 'left bottom';
+          this.monePos= 'left bottom';
+        }
+      },
       scroll: function() {
         if(window) {
           window.scroll({

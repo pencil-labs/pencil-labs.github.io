@@ -18,7 +18,10 @@
       attached: function() {
         var self = this;
         window.onscroll = function() {
-          if(document.body.scrollTop > window.screen.height*0.5) {
+          var offset = window.pageYOffset ||
+                       document.body.scrollTop ||
+                       document.documentElement.scrollTop;
+          if( offset > window.screen.height*0.5) {
             self.$.header.style.opacity = "1";
           }
           else {
