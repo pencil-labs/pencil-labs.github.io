@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include internal_head.html %}
+
+  <body>
+    <div>
+    <pencil-header id="header" selected="2"></pencil-header>
+    </div>
+    <div class="background">
+      <h1 class="title">{{ page.title }}</h1>
+      <span class="internal post-date">Publicado em 
+        {% assign m = page.date | date: "%-m" %}
+        {{ page.date | date: "%-d" }}
+        {% case m %}
+        {% when '1' %}Janeiro
+        {% when '2' %}Fevereiro
+        {% when '3' %}Março
+        {% when '4' %}Abril
+        {% when '5' %}Maio
+        {% when '6' %}Junho
+        {% when '7' %}Julho
+        {% when '8' %}Agosto
+        {% when '9' %}Setembro
+        {% when '10' %}Outubro
+        {% when '11' %}Novembro
+        {% when '12' %}Dezembro
+        {% endcase %}
+        {{ page.date | date: "%Y" }}, por {{ page.author }}</span>
+      <div class="content container post-body">
+        <div class="post">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    <pencil-footer></pencil-footer>
+  </body>
+</html>

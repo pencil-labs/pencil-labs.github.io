@@ -27,6 +27,7 @@
   src: url("../../fonts/AdventPro-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+@import url('https://fonts.googleapis.com/css?family=Domine');
 #header {
   transition: all ease .35s;
   position: fixed;

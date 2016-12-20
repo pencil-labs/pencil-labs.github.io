@@ -21,7 +21,7 @@
     .participa {
       display: block;
       float: left;
-      margin: 10px;
+      margin: 10px 0;
       padding: 20px;
       background: #fff;
     }
@@ -29,12 +29,12 @@
       padding: 10px 10px 0;
     }
     .participa {
-      width: calc(60% - 60px);
+      width: calc(60% - 50px);
       height: 450px;
     }
     .lupa {
       position: relative;
-      width: calc(100% - 60px);
+      width: calc(100% - 40px);
       height: 300px;
     }
     .lupa .image {
@@ -57,7 +57,7 @@
       bottom: 0;
     }
     .lupa .description {
-      width: calc(60% - 60px);
+      width: calc(60% - 40px);
       height: 280px;
       position: relative;
       overflow: hidden;
@@ -82,10 +82,14 @@
       height: 360px;
     }
     .uplug {
-      width: calc(40% - 20px);
+      width: calc(40% - 10px);
       height: 400px;
+      margin: 10px 0 10px 20px;
       background: transparent;
       padding: 0;
+    }
+    .uplug.reverse {
+      margin: 10px 20px 10px 0;
     }
     .uplug .wrapper {
       height: 370px;
@@ -103,7 +107,7 @@
       .lupa,
       .participa {
         display: block;
-        margin: 10px;
+        margin: 10px 0;
         padding: 20px;
         background: #fff;
         width: auto;
@@ -251,7 +255,7 @@
         </div>
       </div>
     </div>
-    <div class="uplug">
+    <div class="uplug reverse">
       <div class="wrapper">
         <div class="image">
           <iron-image
@@ -282,7 +286,7 @@
       largeChanged: function(newLarge) {
         if(newLarge) {
           this.moneSize = 'cover';
-          this.lupaPos = '';
+          this.lupaPos = 'center';
           this.monePos = 'right';
         }
         else {
