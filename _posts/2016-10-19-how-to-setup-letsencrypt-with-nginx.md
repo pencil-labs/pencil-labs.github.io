@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title: Configurando um certificado letsencrypt com nginx
+title: Configurando um certificado letsencrypt com nginx testando
 image: lets_nginx.jpg
 author: Arthur Jahn
 color: 2f9a00
