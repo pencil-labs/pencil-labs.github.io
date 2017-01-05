@@ -29,7 +29,7 @@
       color: #003744;
       text-decoration:none;
     }
-    paper-toolbar a span {
+    paper-toolbar .app-name span.strong {
       font-weight: bolder;
     }
     .space {
@@ -42,6 +42,11 @@
       visibility: hidden;
       padding: 0;
     }
+    @media(max-width: 22em) {
+      .hide {
+        display: none;
+      }
+    }
   </style>
   <template>
     <div class="background">
@@ -50,7 +55,7 @@
           <div class="app-name">
             <a href="/">
               <iron-icon class="logo" icon="pencil:logo"></iron-icon>
-              <span>{{first}}</span>{{second}}
+              <span class="hide"><span class="strong">{{first}}</span>{{second}}</span>
             </a>
           </div>
         </div>
